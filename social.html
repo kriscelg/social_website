@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex &amp; Bea — Halloween Wedding Social</title>
+  <link rel="stylesheet" href="social.css" />
+</head>
+<body>
+
+  <!-- corner spider web images — upload your image files and update the src values -->
+  <img class="web-corner web-corner--tl" src="prize-pics/web1.png" alt="" />
+  <img class="web-corner web-corner--tr" src="prize-pics/web2.png" alt="" />
+
+
+  <nav>
+    <a href="#details">The Evening</a>
+    <a href="social-prizes.html">Prizes</a>
+    <a href="#thankyou">Thank You</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <p class="ornament candle-flicker">&#9676; &#9676; &#9676;</p>
+    <p class="hero-subtitle">WEDDING SOCIAL IN HONOUR OF</p>
+    <p class="hero-title">Alex <span class="ampersand">&amp;</span> Bea</p>
+    <img class="wax-seal-img" src="prize-pics/wax_seal2.png" alt="Seal" />
+
+
+  </div>
+
+  <div class="full-divider"></div>
+
+  <!-- EVENT DETAILS -->
+  <section id="details">
+    <div class="section-rule">
+      <p class="section-title">The Evening</p>
+    </div>
+    <p class="section-ornament">&#10022; &#10022; &#10022;</p>
+
+    <div class="event-card">
+
+      <div class="event-card-photo">
+        <img class="event-card-photo-img" src="prize-pics/engagement_photo1.jpg" alt="Alex &amp; Bea" />
+      </div>
+
+      <p class="event-intro">
+        <strong>Alex Brant-Ganding &amp; Bea Lasao Basaran are getting married!</strong>
+        Come celebrate with them at their Halloween Themed Wedding Social.
+        Join us for a night of great food, drinks, music, and awesome prizes
+        &mdash; and don&rsquo;t forget, costumes are encouraged
+        <span class="event-intro-highlight">(prize $$$ for best costume!)</span>
+      </p>
+
+      <div class="event-grid">
+
+        <div class="event-item">
+          <p class="event-item-label">Date</p>
+          <p class="event-item-value">Friday, October 23</p>
+          <p class="event-item-sub">2026</p>
+        </div>
+
+        <div class="event-item">
+          <p class="event-item-label">Time</p>
+          <p class="event-item-value">8:00 PM &ndash; 1:00 AM</p>
+          <p class="event-item-sub">Arrive by 9:30 PM for door prize entry</p>
+        </div>
+
+        <div class="event-item">
+          <p class="event-item-label">Venue</p>
+          <a class="event-item-value event-venue-link" href="https://www.google.com/maps/search/?api=1&query=2624+Inkster+Blvd+Winnipeg+MB+R2W+3W1" target="_blank" rel="noopener">Petrus Hall</a>
+          <p class="event-item-sub">2624 Inkster Blvd, Winnipeg</p>
+        </div>
+
+      </div>
+
+      <!-- ADD TO CALENDAR -->
+      <div class="cal-wrap">
+        <button class="cal-btn" onclick="toggleCalDropdown(event)" aria-haspopup="true" aria-expanded="false">
+          + Add to Calendar
+        </button>
+        <div class="cal-dropdown" id="calDropdown" hidden>
+          <a class="cal-option" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Alex+%26+Bea+Halloween+Wedding+Social&dates=20261023T200000%2F20261024T010000&details=Come+celebrate+with+Alex+Brant-Ganding+%26+Bea+Lasao+Basaran+at+their+Halloween+Themed+Wedding+Social!+Costumes+encouraged.+Tickets+%2410.&location=Petrus+Hall%2C+2624+Inkster+Blvd%2C+Winnipeg%2C+MB+R2W+3W1" target="_blank" rel="noopener">Google Calendar</a>
+          <a class="cal-option" href="#" onclick="downloadICS(event)">Apple Calendar</a>
+          <a class="cal-option" href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Alex+%26+Bea+Halloween+Wedding+Social&startdt=2026-10-23T20%3A00%3A00&enddt=2026-10-24T01%3A00%3A00&location=Petrus+Hall%2C+2624+Inkster+Blvd%2C+Winnipeg%2C+MB+R2W+3W1&body=Come+celebrate+with+Alex+%26+Bea+at+their+Halloween+Themed+Wedding+Social!+Costumes+encouraged." target="_blank" rel="noopener">Outlook</a>
+        </div>
+      </div>
+
+      <!-- TICKETS -->
+      <div class="ticket-block">
+        <div class="ticket-header">
+          <span class="ticket-label">Tickets</span>
+          <span class="ticket-price">$10</span>
+        </div>
+        <div class="ticket-body">
+          <p>Cash or e-transfer accepted.</p>
+          <p class="ticket-etransfer">
+            E-transfer to:
+            <a href="mailto:alexbeawedding2027@gmail.com">alexbeawedding2027@gmail.com</a>
+            <button class="copy-btn" onclick="copyEmail(this)" aria-label="Copy email address">Copy</button>
+          </p>
+          <p class="ticket-include">
+            Please include: <strong>your name + number of tickets + ticket type</strong>
+            (regular or support)
+          </p>
+          <p class="ticket-nodoor">No tickets will be sold at the door.</p>
+        </div>
+      </div>
+
+      <!-- SUPPORT TICKETS -->
+      <div class="support-block">
+        <p class="support-title">Can&rsquo;t make it?</p>
+        <p>
+          Support tickets are available for <strong>$10</strong> &mdash; each one is
+          automatically entered for a chance to win a <strong>Visa gift card!</strong>
+        </p>
+      </div>
+
+      <!-- WEDDING PARTY -->
+      <div class="party-block">
+        <p class="party-title">Tickets available from any member of the wedding party</p>
+        <div class="party-grid">
+          <div class="party-col">
+            <span>KC Guevarra</span>
+            <span>Eisel Manimtim</span>
+            <span>Rasmin Patiu</span>
+            <span>Kalli Brandt-Ganding</span>
+          </div>
+          <div class="party-col">
+            <span>Nic Brandt-Ganding</span>
+            <span>Jericho Dado</span>
+            <span>Darian Hole</span>
+            <span>Patrick Basaran</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <!-- ENGAGEMENT PHOTOS -->
+  <section class="photos-section">
+    <div class="photos-grid">
+      <div class="photo-slot">
+        <img class="photo-img" src="photos/photo1.jpg" alt="Alex &amp; Bea" />
+      </div>
+      <div class="photo-slot">
+        <img class="photo-img" src="photos/photo2.jpg" alt="Alex &amp; Bea" />
+      </div>
+      <div class="photo-slot">
+        <img class="photo-img" src="photos/photo3.jpg" alt="Alex &amp; Bea" />
+      </div>
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <!-- PRIZES TEASER -->
+  <section id="prizes-teaser" class="prizes-teaser">
+    <div class="section-rule">
+      <p class="section-title">Prizes</p>
+    </div>
+    <p class="section-ornament">&#10022; &#10022; &#10022;</p>
+    <p style="font-family:'ThinFont',Georgia,serif; font-size:0.92rem; color:var(--parchment-dim); max-width:520px; margin:0 auto; line-height:1.9; letter-spacing:0.04em;">
+      Try your luck with our prize tickets! Take home anything from electronics and gift cards to amazing getaways and so much more!
+    </p>
+    <a href="social-prizes.html" class="prizes-link-btn">View All Prizes</a>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <!-- THANK YOU -->
+  <section id="thankyou" class="thankyou-section">
+    <div class="section-rule">
+      <p class="section-title">With Gratitude</p>
+    </div>
+    <p class="section-ornament">&#10022; &#10022; &#10022;</p>
+
+    <p class="thankyou-intro">A SPECIAL TAHNK YOU TO OUR FAMILY & FRIENDS!</p>
+
+    <p class="thankyou-intro">We are so grateful for all of your support! We truly cannot do this without you! <br><br> Thank you for the help with organizing, set up, food and many more! <br><br> To our Family, Friends, wedding party, thank you all for the time, effort and generosity in supporting us! <br><br> To the prize sponsors, we truly cannot express our gratitude to you all - but thank you so much! <br><br> To Mommy Ajie, Tito Cocoi, Tito Loloy, Mommy Yesa, thank you for your love and generosity! Tita Gay and Tito
+Wowie thank you as well for the DJ! To Alex’s Grandma, thank you for our venue and your endless support. To our
+parents, Mommy and Daddy, thank you for always loving and supporting us! </p>
+
+  <p class="thankyou-intro">THANK YOU EVERYONE</p>
+
+  <p class="thankyou-closing-name">Alex & Bea</p>
+  </section>
+
+  <footer>
+    <div class="footer-seal"><span>A&amp;B</span></div>
+    <p>Alex &amp; Bea &mdash; Wedding Social &mdash; 2026</p>
+  </footer>
+
+  <script>
+    function toggleCalDropdown(e) {
+      e.stopPropagation();
+      var dropdown = document.getElementById('calDropdown');
+      var btn = document.querySelector('.cal-btn');
+      var isOpen = !dropdown.hidden;
+      dropdown.hidden = isOpen;
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      if (isOpen) {
+        document.removeEventListener('click', closeCalDropdown);
+      } else {
+        document.addEventListener('click', closeCalDropdown);
+      }
+    }
+
+    function closeCalDropdown() {
+      var dropdown = document.getElementById('calDropdown');
+      if (dropdown) {
+        dropdown.hidden = true;
+        document.querySelector('.cal-btn').setAttribute('aria-expanded', 'false');
+        document.removeEventListener('click', closeCalDropdown);
+      }
+    }
+
+    function downloadICS(e) {
+      e.preventDefault();
+      var ics = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//Alex & Bea Wedding Social//EN',
+        'BEGIN:VEVENT',
+        'DTSTART;TZID=America/Winnipeg:20261023T200000',
+        'DTEND;TZID=America/Winnipeg:20261024T010000',
+        'SUMMARY:Alex & Bea Halloween Wedding Social',
+        'LOCATION:Petrus Hall\\, 2624 Inkster Blvd\\, Winnipeg\\, MB R2W 3W1',
+        'DESCRIPTION:Come celebrate with Alex Brant-Ganding & Bea Lasao Basaran at their Halloween Themed Wedding Social! Costumes encouraged. Tickets $10.',
+        'END:VEVENT',
+        'END:VCALENDAR'
+      ].join('\r\n');
+      var blob = new Blob([ics], { type: 'text/calendar' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = 'alex-bea-halloween-social.ics';
+      a.click();
+      URL.revokeObjectURL(url);
+      closeCalDropdown();
+    }
+
+    function copyEmail(btn) {
+      navigator.clipboard.writeText('alexbeawedding2027@gmail.com').then(function() {
+        btn.textContent = 'Copied!';
+        btn.classList.add('copy-btn--done');
+        setTimeout(function() {
+          btn.textContent = 'Copy';
+          btn.classList.remove('copy-btn--done');
+        }, 2000);
+      });
+    }
+
+    document.querySelectorAll('.photo-img, .event-card-photo-img').forEach(function(img) {
+      function show() { img.classList.add('loaded'); }
+      if (img.complete && img.naturalWidth) { show(); }
+      else { img.addEventListener('load', show); }
+    });
+  </script>
+</body>
+</html>
