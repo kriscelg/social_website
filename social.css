@@ -1064,7 +1064,7 @@ footer p {
   z-index: 2;
   opacity: 0.55;
 }
-.web-corner--tl { top: 50px; left: -5px; }
+.web-corner--tl { top: 40px; left: -5px; }
 .web-corner--tr { top: 34px; right: 0; }
 
 
