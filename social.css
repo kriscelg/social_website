@@ -950,23 +950,6 @@ footer p {
   justify-content: center;
 }
 
-.prize-img-wrap::before {
-  content: '✦';
-  font-size: 2.2rem;
-  color: rgba(232, 213, 176, 0.07);
-  pointer-events: none;
-}
-
-.prize-img-wrap::after {
-  content: 'Add image';
-  position: absolute;
-  font-family: 'Cormorant Garamond', 'ThinFont', Georgia, serif;
-  font-size: 0.6rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(196, 176, 144, 0.18);
-}
-
 .prize-img {
   position: absolute;
   inset: 0;
