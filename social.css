@@ -940,7 +940,8 @@ footer p {
 /* ── PRIZE IMAGE ── */
 .prize-img-wrap {
   position: relative;
-  height: 170px;
+  aspect-ratio: 400 / 170;
+  height: auto;
   margin: -2rem -1.8rem 1.4rem;
   overflow: hidden;
   background: rgba(12, 0, 8, 0.9);
